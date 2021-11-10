@@ -1,9 +1,35 @@
-import model_s_grey from "../../images/cars/model_s_grey.png";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 const ImageContainer = () => {
+  const [carColor, setCarColor] = useState();
+
+  const { color } = useSelector((state) => state.config);
+
+  useEffect(() => {
+    const getColor = () => {
+      let cl;
+      switch (color) {
+        case 1:
+          cl = "grey";
+          break;
+        case 2:
+          cl = "red";
+          break;
+        case 3:
+          cl = "white";
+          break;
+        default:
+          cl = "grey";
+      }
+      return "/cars/model_s_" + cl + ".png";
+    };
+    setCarColor(getColor());
+  }, [color]);
+
   return (
     <div className="content">
-      <img src={model_s_grey} alt="Model S" />
+      <img src={carColor} alt="Model S" />
     </div>
   );
 };
