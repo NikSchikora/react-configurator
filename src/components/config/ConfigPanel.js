@@ -1,0 +1,20 @@
+import ConfigColor from "./ConfigColor";
+import ConfigMotor from "./ConfigMotor";
+import ImageContainer from "./ImageContainer";
+
+const ConfigPanel = () => {
+  return (
+    <div className="container mt-5 pt-5">
+      <div className="columns is-vcentered">
+        <div className="column">
+          <ImageContainer />
+        </div>
+        <div className="column">
+          <ConfigMotor />
+          <ConfigColor />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default ConfigPanel;

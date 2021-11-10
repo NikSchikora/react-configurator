@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ConfigPanel from "./components/config/ConfigPanel";
+import TopBar from "./components/ui/TopBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <TopBar />
+      <div class="container mt-5">
+        <h1 class="is-size-1">Electric Car Configurator</h1>
+      </div>
+      <ConfigPanel />
     </div>
   );
 }
