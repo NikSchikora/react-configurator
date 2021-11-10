@@ -37,3 +37,7 @@
 #color__white {
   background-color: white;
 }
+
+.wrapper {
+  min-height: 85vh;
+}
