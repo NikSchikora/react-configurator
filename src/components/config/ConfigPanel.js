@@ -1,5 +1,6 @@
 import ConfigColor from "./ConfigColor";
 import ConfigMotor from "./ConfigMotor";
+import ConfigPrice from "./ConfigPrice";
 import ImageContainer from "./ImageContainer";
 
 const ConfigPanel = () => {
@@ -12,6 +13,7 @@ const ConfigPanel = () => {
         <div className="column">
           <ConfigMotor />
           <ConfigColor />
+          <ConfigPrice />
         </div>
       </div>
     </div>

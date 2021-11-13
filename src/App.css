@@ -14,8 +14,7 @@
 }
 
 .active {
-  background-color: lightgrey;
-  font-weight: bolder;
+  border: solid 3px #317ffa;
 }
 
 .selector__color {
