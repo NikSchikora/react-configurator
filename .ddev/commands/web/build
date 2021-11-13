@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Usage: build
+## Description: Runs "npm run-script build"
+
+cd /var/www/html/
+[ ! -d "node_modules" ] && npm install
+npm run-script build

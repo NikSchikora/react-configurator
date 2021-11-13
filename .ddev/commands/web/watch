@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## Usage: watch
+## Description: Runs "npm start"
+
+cd /var/www/html/
+[ ! -d "node_modules" ] && npm install
+npm start

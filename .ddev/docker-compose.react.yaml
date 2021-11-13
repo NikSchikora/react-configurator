@@ -1,0 +1,9 @@
+version: '3.6'
+#ddev-ext-foundation
+services:
+
+  web:    
+    ports:
+      - "127.0.0.1:$DDEV_HOST_WEBSERVER_PORT:3000"
+    environment:
+      -  HTTP_EXPOSE=${DDEV_ROUTER_HTTP_PORT}:80,${DDEV_MAILHOG_PORT}:8025,3000
