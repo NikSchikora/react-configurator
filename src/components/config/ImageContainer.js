@@ -22,7 +22,7 @@ const ImageContainer = () => {
         default:
           cl = "grey";
       }
-      return "/cars/model_s_" + cl + ".png";
+      return "/cars/model_s_" + cl + ".jpg";
     };
     setCarColor(getColor());
   }, [color]);
